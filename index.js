@@ -95,17 +95,18 @@ else if (purchaseAmount >= 500) {
     for (secondIndex = 1; secondIndex <=10; secondIndex++ ) {
 console.log(`${index} * ${secondIndex} = ${index * secondIndex}`)
     }
-   }*/
+   }
 
+   Запитай у користувача 2 числа і знайди найбільший спільний дільник.
 
-const firstNumber = +prompt('enter first number');
-const secondNumber = +prompt('enter second number');
-for (firstNumber !== 0; secondNumber !== 0;) {
+ let firstNumber = prompt("enter first number");
+ let secondNumber = prompt("enter second number");
+
+while (firstNumber !== secondNumber) {
     if (firstNumber > secondNumber) {
-        firstNumber = firstNumber % secondNumber;
-    } 
-    else {
-        secondNumber = secondNumber % firstNumber;
-    }
-}
-    alert (`НСД ${firstNumber + secondNumber}`)
+     firstNumber = firstNumber - secondNumber;
+    } else {
+      secondNumber = secondNumber - firstNumber;
+   }
+  }
+ alert(`Greatest common denominator ${firstNumber}`);*/
