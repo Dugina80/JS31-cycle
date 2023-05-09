@@ -110,3 +110,4 @@ while (firstNumber !== secondNumber) {
    }
   }
  alert(`Greatest common denominator ${firstNumber}`);*/
+ 
