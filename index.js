@@ -1,60 +1,54 @@
 //Запитай у користувача його вік і визначи, ким він є: дитиною (0-11), підлітком (12-17), дорослим (18_59) або пенсіонером (60 ...), передбач можливість введення невірних даних.
-/*const  question = prompt('Enter your age');
-const child = "child";
+/*const  question = +prompt('Enter your age');
+const child = "child";  // змінні можна не оголошувати, виводити зразу через алерт
 const teenager = "teenager";
 const adult = "adult";
 const pensioner = "pensioner";
 const error = "error";
 if (question === 0 || question <= 11) {
     alert (`You is ${child}`);
-}
-else if (question === 12 || question <= 17) {
+} else if (question === 12 || question <= 17) {
     alert (`You is ${teenager}`);
-}
-else if (question === 18 || question <= 59) {
+} else if (question === 18 || question <= 59) {
     alert (`You is ${adult}`);
-}
-
-else if (question >=60) {
+} else if (question >=60) {
     alert (`You is ${pensioner}`);
-}
-else if (question !== NaN) {
+} else if (question !== NaN) {
     alert (`You is ${error}`);
 }
-
 
 //Запитай у користувача число від 0 до 9 і виведи йому спецсимвол, який розташований на цій клавіші (1 !, 2 @, 3 # і т. д).
 const someNumber = +prompt('Enter number');
 switch (someNumber) {
     case 1:
-        alert (`!`);
+        alert ("!");
         break;
     case 2:
-        alert(`@ and " `);
+        alert("@ and " );
         break;
     case 3:
-        alert (`# and №`);
+        alert ("# and №");
         break;
     case 4:
-        alert(`$ and ; `); 
+        alert("$ and ; "); 
         break;
     case 5:
-        alert (`%`);
+        alert (" % ");
         break;
     case 6:
-        alert(`^ and : `);
+        alert("^ and : ");
         break;
     case 7:
-        alert (`& and ?`);
+        alert ("& and ?");
         break;
      case 8:
-        alert(`*`);  
+        alert("*");  
         break;
      case 9:
-        alert(`(`);
+        alert("(");
         break;
     case 0:
-        alert(`)`);  
+        alert(")");  
         break;   
 }*/
 
@@ -79,11 +73,9 @@ const sevenPercentDiscount = 0.07;
 
 if (purchaseAmount >= 200 && purchaseAmount < 300) {
     alert (`Your discounted amount ${purchaseAmount -(purchaseAmount*threePercentDiscount)}`);
-}
-else if (purchaseAmount >= 300 && purchaseAmount <500) {
+} else if (purchaseAmount >= 300 && purchaseAmount <500) {
     alert (`Your discounted amount ${purchaseAmount - (purchaseAmount*fivePercentDiscount)}`);
-}
-else if (purchaseAmount >= 500) {
+} else if (purchaseAmount >= 500) {
     alert (`Your discounted amount ${purchaseAmount - (purchaseAmount*sevenPercentDiscount)}`);
 }*/
 
@@ -92,7 +84,7 @@ else if (purchaseAmount >= 500) {
    for (index = 2; index <= 9; index++) {
     console.log(`
     multiplication table ${index}`) 
-    for (secondIndex = 1; secondIndex <=10; secondIndex++ ) {
+    for (secondIndex = 1; secondIndex <= 10; secondIndex++ ) {
 console.log(`${index} * ${secondIndex} = ${index * secondIndex}`)
     }
    }
